@@ -1,0 +1,6 @@
+/.idea
+/.vscode
+*.log
+color-ui
+.env
+.DS_Store
