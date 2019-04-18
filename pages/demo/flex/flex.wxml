@@ -1,0 +1,14 @@
+<import src="../tpl/products-tpl/products-tpl.wxml" />
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{name}}</view>
+</cu-custom>
+
+<view class="wrapper">
+  <view class='item one'>1</view>
+  <view class='item yellow'>2</view>
+  <view class='item blueviolet'>3</view>
+  <view class='item blanchedalmond'>4</view>
+  <view class='item lawngreen'>5</view>
+  <view class='item green'>6</view>
+</view>

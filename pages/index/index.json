@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "basics": "/pages/home/home",
+    "component": "/pages/home/home",
+    "plugin": "/pages/new/new",
+    "about": "/pages/myself/index/index"
+  }
+}

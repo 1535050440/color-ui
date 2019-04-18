@@ -1,0 +1,65 @@
+<import src="../tpl/products-tpl/products-tpl.wxml" />
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{name}}</view>
+</cu-custom>
+
+
+
+<!-- 轮播图片start -->
+<swiper class="screen-swiper square-dot}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{banner_list}}" wx:key="unique">
+    <image src="{{item.address}}" mode="aspectFill"></image>
+    <video src="{{item.address}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"></video>
+  </swiper-item>
+</swiper>
+<!-- 轮播图片end -->
+
+
+
+
+
+
+<view class="cu-card article {{isCard?'no-card':''}}" wx:for="{{product_list}}" wx:key="unique">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">{{item.title}}</view>
+    </view>
+    <view class="content">
+      <image src="{{item.address}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">{{item.description}}</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">书山有路</view>
+          <view class="cu-tag bg-green light sm round">唯美</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 引入模板 -->
+  <view class="home-main-header">最近新品</view>
+    <template is="products" data="{{product_list}}" />
+<!-- 引入模板 -->
+
+<blocl hidden="{{loadingHidden}}">
+  <view class="margin flex">
+    <view class="bg-white flex-sub radius shadow-lg">
+      <image src="https://image.weilanwl.com/gif/rhomb-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
+    </view>
+  </view>
+</blocl>
+
+
+<!-- 分享按钮 -->
+<button class='share-btn' open-type='share' data-shareModel='{{cardOperationData.operationList[0]}}'>分享至微信</button>
+<!-- 分享按钮 -->
+
+<!-- <loading hidden="{{loadingHidden}}">
+    加载中...
+</loading> -->
+
+
+<!-- 增加底部边距 -->
+<view class="cu-tabbar-height"></view>

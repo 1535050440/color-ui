@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/demo/test/test",
+    "pages/product/show/show",
+    "pages/products/show/show",
+    "pages/demo/flex/flex",
+    "pages/home/home",
+    "pages/new/new",
+    "pages/myself/index/index",
+    "pages/myself/login/login",
+    "pages/myself/info/info",
+    "pages/myself/log/log",
+    "pages/myself/about/about",
+    "pages/demo/demo/demo",
+    "pages/demo/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "元素",
+        "selectedColor": "#000000",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png"
+      },
+      {
+        "pagePath": "pages/myself/index/index",
+        "text": "组件",
+        "iconPath": "/images/tabbar/component.png",
+        "selectedIconPath": "/images/tabbar/component_cur.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "扩展",
+        "iconPath": "/images/tabbar/plugin.png",
+        "selectedIconPath": "/images/tabbar/plugin_cur.png"
+      },
+      {
+        "pagePath": "pages/myself/index/index",
+        "text": "我的",
+        "iconPath": "/images/tabbar/about.png",
+        "selectedIconPath": "/images/tabbar/about_cur.png"
+      }
+    ]
+  },
+
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+  
+  
+}
